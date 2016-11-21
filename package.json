@@ -1,0 +1,25 @@
+{
+  "name": "hello-es6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js --exec babel-node",
+    "build": "babel src -d dist",
+    "serve": "nf start",
+    "test": "mocha --compilers js:babel-register"
+  },
+  "keywords": [],
+  "author": "Guillaume Chanson <guillaume.chns@gmail.com",
+  "license": "ISC",
+  "engines": {
+    "node": "7.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-preset-es2015": "6.18.0",
+    "babel-register": "6.18.0",
+    "mocha": "3.1.2",
+    "nodemon": "1.11.0"
+  }
+}
